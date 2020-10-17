@@ -1,0 +1,187 @@
+*,
+::after,
+::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.contenedor{
+    padding: 80px 0;
+    max-width: 1000px;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header{
+    width: 100%;
+    height: 100%;
+    background: #5D4157;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A8CABA, #5D4157);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A8CABA, #5D4157); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.nombre-logo{
+    position: absolute;
+    width: 100%;
+    margin: 10px 10px;
+
+}
+
+.nombre-logo img{
+    position: relative;
+    width: 12%;
+    height: 40%;
+    border-radius: 100%;
+    top: -55px;
+    right: -70px;
+    object-fit: cover;
+}
+.nombre-logo p{
+    text-align: center;
+    font-size: 30px;
+}
+ .enlaces-header{
+     position: absolute;
+     top:60px;
+     right: 30%;
+     text-align: center;
+ }
+.enlaces-header a{
+    color: rgb(224, 229, 235);
+    margin: 0 10px;
+    font-size: 20px;  
+}
+.enlaces-header a:hover{
+    background: rgb(180, 177, 176);
+    color:black;
+}
+.coment-nela{
+    margin: 10px 0;
+    text-align: center;
+}
+.coment-nela h1{
+    font-size: 30px;
+    margin: 30px 0;
+}
+.coment-nela p{
+    color: black;
+    margin-top: 10px;
+}
+h1{
+    text-align: center;
+    font-size: 20px;
+    background: rgb(191, 199, 212);
+    margin: 20px 0;  
+}
+.tipos-muebles{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    
+}
+.estilos-muebles img{
+    display: block;
+    flex-basis: 200px;
+    max-width: 200px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+    transform: scale(1);
+    transition: transform .6s;
+}
+.estilos-muebles img:hover{
+    transform:scale(1.4);
+}
+a{
+    align-content: center;  
+}
+
+.galeria{
+    display: flex;
+    margin: 30px 20px;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}   
+.galeria-img{
+    width: 32%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+}    
+.galeria-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    vertical-align: top;
+    transform: scale(1);
+    transition: transform .6s;
+}   
+.galeria-img img:hover{
+    transform: scale(1.3);
+}   
+.extra-galeria{
+    position: absolute;
+    top: 0;
+    background: rgba(236, 229, 229, 0.6);
+    width: 100%;
+    height: 100%;
+    transform: translate(100%,-100%);
+    transition: transform .6s;
+}
+    
+.galeria-img:hover .extra-galeria{
+    transform: translate(0);
+}
+
+.extra-galeria p{
+    color: rgb(32, 36, 36);
+    width: 95%;
+    margin: 10px auto;
+    font-weight: 400;
+    text-align: center;
+}
+footer{
+    padding: 100px 0;
+    background: #5D4157;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #A8CABA, #5D4157);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #A8CABA, #5D4157); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+.footer-contacto{
+    text-align: center;
+}
+.footer-logo img{
+    position: relative;
+    width: 30%;
+    height: 30%;
+    border-radius: 100%;
+    top: 20px;
+    right: -380px;
+}
+.footer-contacto p:hover{
+    text-decoration: underline;
+}
+
+footer i{
+    font-size: 30px;
+    color: royalblue;
+    padding: 15px ;
+    background:  #5D4157;
+    border-radius: 100%;
+    cursor: pointer;
+}
+    
